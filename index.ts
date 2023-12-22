@@ -84,7 +84,7 @@ function dateToNPMDate(date: Date): string {
 }
 
 function getYearsBetweenDates(from: Date, to: Date): Date[] {
-  const years: Date[] = [];
+  const years: Date[] = [from];
 
   while (from < to) {
     years.push(from);
